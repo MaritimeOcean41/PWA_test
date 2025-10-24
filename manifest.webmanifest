@@ -1,0 +1,38 @@
+{
+    "name": "PWA_Test",
+    "description": "Test.",
+    "start_url": "./home",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "assets/favicon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/favicon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/favicon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "assets/screenshot-720p.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "assets/screenshot-narrow.png",
+            "sizes": "320x640",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ],
+    "orientation": "portrait-primary"
+}

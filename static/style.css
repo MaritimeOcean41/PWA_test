@@ -1,0 +1,25 @@
+body
+{
+    width: 100vw;
+    height: 200vh;
+}
+button#install
+{
+    background-color: rgb(58, 58, 240);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    font-size: 3em;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #eee;
+    outline: none;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+button#install:hover
+{
+    background-color: rgb(46, 46, 201);
+}
