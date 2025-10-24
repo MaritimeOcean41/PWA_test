@@ -1,21 +1,5 @@
-// PWA installation
-let installButton = document.querySelector("button#install");
-let installPrompt = null;
-
-installButton.addEventListener("click", async () => {
-    if(!installPrompt) {
-        return;
-    }
-    const result = await installPrompt.prompt();
-    //sw(); // Trigger Service Worker
-});
-window.addEventListener("beforeinstallprompt", (event) => {
-    event.preventDefault();
-    installPrompt = event; 
-});
-
 // IndexedDB
-import { openDB } from '../lib/idb/+esm.js';
+/*import { openDB } from '../lib/idb/+esm.js';
 var testData = [
     { id: 1, name: "test_01", ver: 2, desc: "SEC" },
     { id: 2, name: "test_02", ver: 3, desc: "THI" },
@@ -27,14 +11,21 @@ async function testDB() {
         upgrade(db) {
             db.createObjectStore("testes", { keyPath: "id" });
         },
-    });
+    })
 
     testData.forEach(async (testD) => {
         await db.add("testes", testD);
         console.log(testD);
-    });
+    })
 }
-testDB();
+testDB();*/
+function lol() {
+    console.log('a');
+}
+
+if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../sw.js');
+}
 /*
 var testData = [
     { id: 1, name: "test_01", ver: 2, desc: "SEC" },
