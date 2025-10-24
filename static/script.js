@@ -7,7 +7,7 @@ installButton.addEventListener("click", async () => {
         return;
     }
     const result = await installPrompt.prompt();
-    sw(); // Trigger Service Worker
+    //sw(); // Trigger Service Worker
 });
 window.addEventListener("beforeinstallprompt", (event) => {
     event.preventDefault();
@@ -63,7 +63,7 @@ request.onupgradeneeded = (e) => {
         });
     };
 };*/
-
+/*
 // Offline Website (ServiceWorker)
 const swPath = '../sw.js';
 function sw() {
@@ -72,4 +72,4 @@ function sw() {
     } else {
         alert('Aplicação incompatível em seu navegador');
     }
-}
+}*/
